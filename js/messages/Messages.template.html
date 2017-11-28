@@ -7,10 +7,10 @@
             <input type="checkbox" ng-model="message.selected" />
           </div>
           <div class="col-xs-2" ng-if="(message.starred === false)">
-            <i class="star fa fa-star-o"></i>
+            <i class="star fa fa-star-o" ng-click="message.starred = true"></i>
           </div>
           <div class="col-xs-2" ng-if="(message.starred === true)">
-            <i class="star fa fa-star"></i>
+            <i class="star fa fa-star" ng-click="message.starred = false"></i>
           </div>
         </div>
       </div>

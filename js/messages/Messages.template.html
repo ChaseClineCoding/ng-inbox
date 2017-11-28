@@ -1,4 +1,5 @@
 <div ng-controller="messages as ctrl">
+  <toolbar messages="ctrl.mail"></toolbar>
   <div ng-repeat="message in ctrl.mail">
     <div class="row message read-{{message.read}} selected-{{message.selected}}">
       <div class="col-xs-1">

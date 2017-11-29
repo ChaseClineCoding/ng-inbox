@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "ng-inbox",
+    "public": "/",
     "ignore": [
       "firebase.json",
       "**/.*",

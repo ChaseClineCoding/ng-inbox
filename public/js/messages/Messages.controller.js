@@ -4,7 +4,7 @@
   function messages($http) {
     let vm = this
 
-    $http.get('http://localhost:8082/api/messages')
+    $http.get('https://localhost:8082/api/messages')
     .then((response) => {
       vm.mail = response.data['_embedded'].messages
     })

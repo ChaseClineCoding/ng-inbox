@@ -6,7 +6,7 @@
     </p>
 
     <div ng-if="(ctrl.selectedTotal($ctrl.messages) === 0)">
-      <button class="btn btn-default">
+      <button class="btn btn-default" ng-click="ctrl.selectAll($ctrl.messages)">
         <i class="fa fa-square-o"></i>
       </button>
 
@@ -38,11 +38,11 @@
     </div>
 
     <div ng-if="(ctrl.selectedTotal($ctrl.messages) > 0)">
-      <button class="btn btn-default" ng-if="(ctrl.selectedTotal($ctrl.messages) < $ctrl.messages.length)">
+      <button class="btn btn-default" ng-if="(ctrl.selectedTotal($ctrl.messages) < $ctrl.messages.length)" ng-click="ctrl.selectAll($ctrl.messages)">
         <i class="fa fa-minus-square-o"></i>
       </button>
 
-      <button class="btn btn-default" ng-if="(ctrl.selectedTotal($ctrl.messages) === $ctrl.messages.length)">
+      <button class="btn btn-default" ng-if="(ctrl.selectedTotal($ctrl.messages) === $ctrl.messages.length)" ng-click="ctrl.selectAll($ctrl.messages)">
         <i class="fa fa-check-square-o"></i>
       </button>
 
